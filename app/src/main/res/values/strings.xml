@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Design1</string>
+    <string name="filters">Filters</string>
+    <string name="reset_filters">Reset Filters</string>
+    <string name="year">Year</string>
+    <string name="engine_hours">Engine Hours</string>
+    <string name="has_warranty">Has Warranty?</string>
+    <string name="search_radius">Search Radius</string>
+    <string name="engine_type">Engine Type</string>
+    <string name="fuel_type">Fuel Type</string>
+    <string name="boat_color">Boat Color</string>
+</resources>

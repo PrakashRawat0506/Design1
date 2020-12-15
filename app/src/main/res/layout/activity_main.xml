@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="48dp"
+    android:paddingBottom="32dp"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageViewMainCancelFilters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_cancel"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewMainFilters"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewMainFilters" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewMainFilters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:gravity="center"
+        android:text="@string/filters"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonMainResetFilters"
+        app:layout_constraintStart_toEndOf="@+id/imageViewMainCancelFilters"
+        app:layout_constraintTop_toTopOf="@+id/buttonMainResetFilters" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonMainResetFilters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/ic_cancel_small"
+        android:drawablePadding="8dp"
+        android:text="@string/reset_filters"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewMainYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/year"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMainFilters" />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/spinnerMainYear"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bg_spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMainYear" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewMainEngineHours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/engine_hours"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerMainYear" />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/spinnerMainEngineHours"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bg_spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMainEngineHours" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewMainHasWarranty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/has_warranty"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerMainEngineHours" />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/spinnerHasWarranty"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bg_spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMainHasWarranty" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewMainSearchRadius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/search_radius"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerHasWarranty" />
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/sliderMainSearchRadius"
+        style="@style/Widget.App.Slider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:stepSize="10"
+        android:valueFrom="0"
+        android:valueTo="100"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMainSearchRadius" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewMainEngineType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/engine_type"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sliderMainSearchRadius" />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/spinnerMainEngineType"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bg_spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMainEngineType" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewMainFuelType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/fuel_type"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerMainEngineType" />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/spinnerMainFuelType"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bg_spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMainFuelType" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewMainBoatColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/boat_color"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerMainFuelType" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonMainBoatColorBlack"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/btn_color_picker_black_bg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMainBoatColor" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonMainBoatColorWhite"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/btn_color_picker_white_bg"
+        app:layout_constraintStart_toEndOf="@id/buttonMainBoatColorBlack"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMainBoatColor" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonMainBoatColorGrey"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/btn_color_picker_grey_bg"
+        app:layout_constraintStart_toEndOf="@id/buttonMainBoatColorWhite"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMainBoatColor" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonMainBoatColorTeal"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/btn_color_picker_teal_bg"
+        app:layout_constraintStart_toEndOf="@id/buttonMainBoatColorGrey"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMainBoatColor" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
