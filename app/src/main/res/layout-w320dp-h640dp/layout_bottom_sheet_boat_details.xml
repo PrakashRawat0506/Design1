@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutBottomSheetBoatDetails"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottom_sheet_boat_details_bg"
+    android:paddingBottom="@dimen/sixteen_dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageViewMinimizeBottomSheet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/eight_dp"
+        android:src="@drawable/ic_minimize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewNameBoatDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sixteen_dp"
+        android:layout_marginTop="@dimen/sixteen_dp"
+        android:layout_marginRight="@dimen/sixteen_dp"
+        android:text="@string/_2019_ocean_alexander_120_megayacht"
+        android:textSize="@dimen/sixteen_sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageViewMinimizeBottomSheet" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewDescBoatDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sixteen_dp"
+        android:layout_marginRight="@dimen/sixteen_dp"
+        android:text="@string/long_yacht"
+        android:textSize="@dimen/sixteen_sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewNameBoatDetails" />
+
+    <LinearLayout
+        android:id="@+id/layoutPriceBoatDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sixteen_dp"
+        android:layout_marginRight="@dimen/sixteen_dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonPriceBoatDetails"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/buttonPriceBoatDetails">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/month"
+            android:textColor="@color/grey_80"
+            android:textSize="@dimen/eight_sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewPriceBoatDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_732"
+            android:textColor="@color/green"
+            android:textSize="@dimen/sixteen_sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutAprBoatDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonPriceBoatDetails"
+        app:layout_constraintEnd_toStartOf="@id/layoutDownBoatDetails"
+        app:layout_constraintStart_toEndOf="@id/layoutPriceBoatDetails"
+        app:layout_constraintTop_toTopOf="@+id/buttonPriceBoatDetails">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/apr"
+            android:textColor="@color/grey_80"
+            android:textSize="@dimen/eight_sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_5_9"
+            android:textColor="@color/green"
+            android:textSize="@dimen/sixteen_sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutDownBoatDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonPriceBoatDetails"
+        app:layout_constraintEnd_toStartOf="@id/layoutTermBoatDetails"
+        app:layout_constraintStart_toEndOf="@id/layoutAprBoatDetails"
+        app:layout_constraintTop_toTopOf="@+id/buttonPriceBoatDetails">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/down"
+            android:textColor="@color/grey_80"
+            android:textSize="@dimen/eight_sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_0"
+            android:textColor="@color/green"
+            android:textSize="@dimen/sixteen_sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutTermBoatDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/thirtytwo_dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonPriceBoatDetails"
+        app:layout_constraintEnd_toStartOf="@id/buttonPriceBoatDetails"
+        app:layout_constraintTop_toTopOf="@+id/buttonPriceBoatDetails">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/term"
+            android:textColor="@color/grey_80"
+            android:textSize="@dimen/eight_sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_69"
+            android:textColor="@color/green"
+            android:textSize="@dimen/sixteen_sp" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonPriceBoatDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sixteen_dp"
+        android:layout_marginTop="@dimen/sixteen_dp"
+        android:layout_marginRight="@dimen/sixteen_dp"
+        android:background="@drawable/btn_green_bg"
+        android:padding="@dimen/eight_dp"
+        android:text="@string/_130_000"
+        android:textColor="@color/white"
+        android:textSize="@dimen/twentyfour_sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewDescBoatDetails" />
+
+    <include
+        android:id="@+id/layoutBottomActionsBottomSheet"
+        layout="@layout/layout_bottom_actions_boat_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sixteen_dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonPriceBoatDetails" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -32,4 +32,26 @@
     </style>
     <!-- Slider theme end -->
 
+    <!-- No Action Bar theme for BoatDetailsActivity -->
+    <style name="BoatDetails.Theme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- To set the status bar color -->
+        <item name="colorPrimaryDark">@color/black</item>
+    </style>
+    <!-- End -->
+
+    <!-- Toolbar theme -->
+    <style name="ToolbarTheme">
+        <item name="android:textColorSecondary">@color/white</item>
+    </style>
+    <!-- End -->
+
+    <!-- Bottom Sheet Dailog -->
+    <style name="BottomSheetDialogTheme" parent="Theme.Design.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetStyle</item>
+    </style>
+
+    <style name="BottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <!-- End -->
 </resources>
