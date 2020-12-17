@@ -16,7 +16,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/textView"
+            android:id="@+id/textViewCashDownPricePopup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/get_pre_approved"
@@ -37,7 +37,7 @@
             android:layout_marginEnd="@dimen/eight_dp"
             android:src="@drawable/ic_forward"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/textView"
+            app:layout_constraintEnd_toStartOf="@+id/textViewCashDownPricePopup"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintHorizontal_chainStyle="packed"
             app:layout_constraintStart_toStartOf="parent"
@@ -52,8 +52,8 @@
             android:textColor="@color/white"
             android:textSize="@dimen/ten_sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/textView"
-            app:layout_constraintTop_toBottomOf="@+id/textView" />
+            app:layout_constraintStart_toStartOf="@+id/textViewCashDownPricePopup"
+            app:layout_constraintTop_toBottomOf="@+id/textViewCashDownPricePopup" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

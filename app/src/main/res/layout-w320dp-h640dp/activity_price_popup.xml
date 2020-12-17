@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonFinancePricePopup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/twenty_dp"
+        android:layout_marginTop="@dimen/twenty_dp"
+        android:background="@color/brand_blue"
+        android:minWidth="@dimen/zero_dp"
+        android:minHeight="@dimen/zero_dp"
+        android:paddingLeft="@dimen/fourtyeight_dp"
+        android:paddingTop="@dimen/sixteen_dp"
+        android:paddingRight="@dimen/fourtyeight_dp"
+        android:paddingBottom="@dimen/sixteen_dp"
+        android:text="@string/finance"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonPricePricePopup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/grey_light"
+        android:minWidth="@dimen/zero_dp"
+        android:minHeight="@dimen/zero_dp"
+        android:paddingLeft="@dimen/fourtyeight_dp"
+        android:paddingTop="@dimen/sixteen_dp"
+        android:paddingRight="@dimen/fourtyeight_dp"
+        android:paddingBottom="@dimen/sixteen_dp"
+        android:text="@string/price"
+        android:textColor="@color/grey_80"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonFinancePricePopup"
+        app:layout_constraintStart_toEndOf="@+id/buttonFinancePricePopup"
+        app:layout_constraintTop_toTopOf="@+id/buttonFinancePricePopup" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewCashDownPricePopup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/twenty_dp"
+        android:layout_marginTop="@dimen/ninetysix_dp"
+        android:text="@string/cash_down"
+        android:textColor="@color/grey_20"
+        android:textSize="@dimen/fourteen_sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewCashDownSelectPricePopup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/onehundredfour_dp"
+        android:layout_marginEnd="@dimen/twenty_dp"
+        android:background="@drawable/textview_cash_down_price_popup_bg"
+        android:paddingLeft="@dimen/eight_dp"
+        android:paddingTop="@dimen/eight_dp"
+        android:paddingRight="@dimen/fourty_dp"
+        android:paddingBottom="@dimen/eight_dp"
+        android:text="@string/_0"
+        android:textColor="@color/grey_20"
+        android:textSize="@dimen/fourteen_sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/sliderCashDownPricePopup"
+        style="@style/Widget.App.Slider"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/eighteen_dp"
+        android:layout_marginTop="@dimen/onefourtyfour_dp"
+        android:layout_marginEnd="@dimen/twenty_dp"
+        android:valueFrom="0"
+        android:valueTo="100"
+        app:labelBehavior="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewCashDownInitialPricePopup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/twenty_dp"
+        android:text="@string/_0"
+        android:textColor="@color/grey_20"
+        android:textSize="@dimen/twelve_sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sliderCashDownPricePopup" />
+
+    <TextView
+        android:id="@+id/textViewCashDownMaxPricePopup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/twenty_dp"
+        android:text="@string/_150_000"
+        android:textColor="@color/grey_20"
+        android:textSize="@dimen/twelve_sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sliderCashDownPricePopup" />
+
+    <TextView
+        android:id="@+id/textViewMonthlyPaymentPricePopup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/twenty_dp"
+        android:layout_marginTop="@dimen/twofiftytwo_dp"
+        android:text="@string/monthly_payment"
+        android:textColor="@color/grey_20"
+        android:textSize="@dimen/fourteen_sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewMonthlyPaymentSelectPricePopup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/twofiftytwo_dp"
+        android:layout_marginEnd="@dimen/twenty_dp"
+        android:background="@drawable/textview_cash_down_price_popup_bg"
+        android:paddingLeft="@dimen/eight_dp"
+        android:paddingTop="@dimen/eight_dp"
+        android:paddingRight="@dimen/sixteen_dp"
+        android:paddingBottom="@dimen/eight_dp"
+        android:text="@string/_6000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/sliderMonthlyPaymentPricePopup"
+        style="@style/Widget.App.Slider"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/eighteen_dp"
+        android:layout_marginTop="@dimen/threehundredten_dp"
+        android:layout_marginEnd="@dimen/twenty_dp"
+        android:valueFrom="0"
+        android:valueTo="100"
+        app:labelBehavior="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewMonthlyPaymentInitialPricePopup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/twenty_dp"
+        android:text="@string/_0"
+        android:textSize="@dimen/twelve_sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sliderMonthlyPaymentPricePopup" />
+
+    <TextView
+        android:id="@+id/textViewMonthlyPaymentMaxPricePopup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/twenty_dp"
+        android:text="@string/_150_000"
+        android:textSize="@dimen/twelve_sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sliderMonthlyPaymentPricePopup" />
+
+    <TextView
+        android:id="@+id/textViewBoatzonOffersPricePopup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/twenty_dp"
+        android:layout_marginTop="@dimen/fouronesix_dp"
+        android:text="Boatzon Offers Financing"
+        android:textSize="@dimen/eighteen_sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewBoatzonOffersDecPricePopup"
+        android:layout_width="@dimen/zero_dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/twenty_dp"
+        android:layout_marginTop="@dimen/fourfoureight_dp"
+        android:layout_marginEnd="@dimen/twenty_dp"
+        android:text="@string/you_pre_qualification_terms_expired_get_pre_qualified_again_to_see_your_current_terms"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonBoatzonOffersPricePopup"
+        android:layout_width="@dimen/zero_dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/twenty_dp"
+        android:layout_marginEnd="@dimen/twenty_dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/btn_financing_price_popup_bg"
+        android:text="@string/boatzon_offers_financing"
+        android:textAllCaps="false"
+        android:textColor="@color/brand_blue"
+        android:textSize="@dimen/eighteen_sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <include
+        layout="@layout/layout_rate_experience"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/buttonBoatzonOffersPricePopup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBoatzonOffersDecPricePopup" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

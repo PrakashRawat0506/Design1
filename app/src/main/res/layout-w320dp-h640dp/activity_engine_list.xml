@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutEngineList"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_e5">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonAllEngineList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/twenty_dp"
+        android:layout_marginTop="@dimen/oneonetwo_dp"
+        android:background="@drawable/btn_all_engine_list_bg"
+        android:minWidth="@dimen/zero_dp"
+        android:minHeight="@dimen/zero_dp"
+        android:paddingLeft="@dimen/sixteen_dp"
+        android:paddingTop="@dimen/ten_dp"
+        android:paddingRight="@dimen/sixteen_dp"
+        android:paddingBottom="@dimen/ten_dp"
+        android:text="@string/all"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/twelve_sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonNewEngineList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/two_dp"
+        android:background="@color/white"
+        android:minWidth="@dimen/zero_dp"
+        android:minHeight="@dimen/zero_dp"
+        android:paddingLeft="@dimen/sixteen_dp"
+        android:paddingTop="@dimen/ten_dp"
+        android:paddingRight="@dimen/sixteen_dp"
+        android:paddingBottom="@dimen/ten_dp"
+        android:text="@string/_new"
+        android:textAllCaps="false"
+        android:textColor="@color/grey_80"
+        android:textSize="@dimen/twelve_sp"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonAllEngineList"
+        app:layout_constraintStart_toEndOf="@+id/buttonAllEngineList"
+        app:layout_constraintTop_toTopOf="@+id/buttonAllEngineList"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonUsedEngineList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/two_dp"
+        android:background="@drawable/btn_used_engine_list_bg"
+        android:minWidth="@dimen/zero_dp"
+        android:minHeight="@dimen/zero_dp"
+        android:paddingLeft="@dimen/sixteen_dp"
+        android:paddingTop="@dimen/ten_dp"
+        android:paddingRight="@dimen/sixteen_dp"
+        android:paddingBottom="@dimen/ten_dp"
+        android:text="@string/used"
+        android:textAllCaps="false"
+        android:textColor="@color/grey_80"
+        android:textSize="@dimen/twelve_sp"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonNewEngineList"
+        app:layout_constraintStart_toEndOf="@+id/buttonNewEngineList"
+        app:layout_constraintTop_toTopOf="@+id/buttonNewEngineList"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Spinner
+        android:id="@+id/spinnerOneEngineList"
+        android:layout_width="@dimen/zero_dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/eight_dp"
+        android:layout_marginTop="@dimen/oneonetwo_dp"
+        android:layout_marginEnd="@dimen/eighteen_dp"
+        android:background="@drawable/spinner_engine_list_bg"
+        android:padding="@dimen/twenty_dp"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonAllEngineList"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonUsedEngineList"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewItemsCountEngineList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/twenty_dp"
+        android:layout_marginTop="@dimen/onenineeight_dp"
+        android:padding="@dimen/eight_dp"
+        android:text="@string/_503_items"
+        android:textColor="@color/grey_60"
+        android:textSize="@dimen/twelve_sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerTwoEngineList"
+        android:layout_width="@dimen/fourty_dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/eight_dp"
+        android:layout_marginTop="@dimen/onenineeight_dp"
+        android:layout_marginEnd="@dimen/twenty_dp"
+        android:padding="@dimen/sixteen_dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewSortByEngineList"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewSortByEngineList"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewSortByEngineList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/onenineeight_dp"
+        android:layout_marginEnd="@dimen/seventytwo_dp"
+        android:padding="@dimen/eight_dp"
+        android:text="@string/sort_by"
+        android:textColor="@color/grey_60"
+        android:textSize="@dimen/twelve_sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutGetApprovedEngineList"
+        android:layout_width="@dimen/zero_dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/twenty_dp"
+        android:layout_marginTop="@dimen/twofivezero_dp"
+        android:layout_marginEnd="@dimen/twenty_dp"
+        android:background="@color/green"
+        android:paddingBottom="@dimen/sixteen_dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewGetPreApprovedEngineList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/sixteen_dp"
+            android:layout_marginTop="@dimen/sixteen_dp"
+            android:text="@string/get_pre_approved_now"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sixteen_sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewDescGetApprovedEngineList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/sixteen_dp"
+            android:layout_marginTop="@dimen/eight_dp"
+            android:layout_marginRight="@dimen/thirtytwo_dp"
+            android:text="@string/in_2_minutes_and_view_personalized_monthly_payments_for_our_inventory_of_new_engines"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewGetPreApprovedEngineList" />
+
+        <include
+            layout="@layout/layout_rate_experience"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero_dp"
+            android:layout_marginTop="@dimen/eight_dp"
+            android:layout_marginBottom="@dimen/eight_dp"
+            app:layout_constraintBottom_toTopOf="@id/buttonGetApprovedEngineList"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewDescGetApprovedEngineList" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonGetApprovedEngineList"
+            android:layout_width="@dimen/zero_dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/sixteen_dp"
+            android:layout_marginTop="@dimen/onetwofive_dp"
+            android:layout_marginRight="@dimen/sixteen_dp"
+            android:background="@drawable/btn_get_approved_engine_list_bg"
+            android:text="@string/get_pre_approved"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/fourteen_sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/imageButtonCloseLayoutEngineList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/eight_dp"
+            android:layout_marginEnd="@dimen/sixteen_dp"
+            android:background="@android:color/transparent"
+            android:minWidth="@dimen/zero_dp"
+            android:minHeight="@dimen/zero_dp"
+            android:src="@drawable/ic_close"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewEngineList"
+        android:layout_width="@dimen/zero_dp"
+        android:layout_height="@dimen/zero_dp"
+        android:layout_marginStart="@dimen/twenty_dp"
+        android:layout_marginTop="@dimen/sixteen_dp"
+        android:layout_marginEnd="@dimen/twenty_dp"
+        android:layout_marginBottom="@dimen/eighteen_dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutGetApprovedEngineList" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/twenty_dp"
+        android:layout_marginTop="@dimen/eight_dp"
+        android:layout_marginEnd="@dimen/twenty_dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewItemsCountEngineList"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAllEngineList">
+
+        <HorizontalScrollView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.google.android.material.chip.ChipGroup
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:singleLine="true">
+
+
+            </com.google.android.material.chip.ChipGroup>
+
+        </HorizontalScrollView>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonMoreFiltersEngineList"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_more_filters_engine_list_bg"
+            android:drawableEnd="@drawable/ic_more_filters"
+            android:drawablePadding="@dimen/eight_dp"
+            android:minWidth="@dimen/zero_dp"
+            android:minHeight="@dimen/zero_dp"
+            android:padding="@dimen/eight_dp"
+            android:text="@string/more_filters"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/twelve_sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

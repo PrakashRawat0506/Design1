@@ -13,4 +13,12 @@
     <color name="brand_orange">#FFAB2D</color>
     <color name="brand_blue">#378BCB</color>
     <color name="grey_80">#717C99</color>
+    <color name="grey_light">#F3F3F3</color>
+    <color name="grey_20">#98A1B9</color>
+    <color name="grey_bg">#D3D9E7</color>
+    <color name="red">#FF0000</color>
+    <color name="yellow">#FEDB00</color>
+    <color name="green_Dark">#097D57</color>
+    <color name="grey_e5">#E5E5E5</color>
+    <color name="grey_60">#C0C7D9</color>
 </resources>

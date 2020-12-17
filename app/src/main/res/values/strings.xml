@@ -35,4 +35,24 @@
     <string name="_69">69</string>
     <string name="_130_000">$ 130,000</string>
     <string name="gopi">Gopi</string>
+    <string name="finance">Finance</string>
+    <string name="price">Price</string>
+    <string name="cash_down">Cash Down</string>
+    <string name="_150_000">$ 150000</string>
+    <string name="_6000">$ 6000</string>
+    <string name="monthly_payment">Monthly Payment</string>
+    <string name="you_pre_qualification_terms_expired_get_pre_qualified_again_to_see_your_current_terms">You pre-qualification terms expired. Get pre-qualified again to see your current terms.</string>
+    <string name="boatzon_offers_financing">Boatzon Offers Financing</string>
+    <string name="all">All</string>
+    <string name="_new">New</string>
+    <string name="used">Used</string>
+    <string name="_503_items">503 Items</string>
+    <string name="sort_by">Sort by:</string>
+    <string name="get_pre_approved_now">Get Pre-Approved Now</string>
+    <string name="in_2_minutes_and_view_personalized_monthly_payments_for_our_inventory_of_new_engines">in 2 minutes and view personalized monthly payments for our inventory of new engines</string>
+    <string name="more_filters">More Filters</string>
+    <string name="_2021_torqeedo_cruise_10_0_txl">2021 Torqeedo Cruise 10.0 TXL</string>
+    <string name="fort_lauderdale_fl">Fort Lauderdale, FL</string>
+    <string name="_9_599">$ 9,599</string>
+    <string name="est_450_mo">Est. $450/mo</string>
 </resources>

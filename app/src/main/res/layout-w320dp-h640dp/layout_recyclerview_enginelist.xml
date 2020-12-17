@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutRecyclerViewEngineList"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/eight_dp"
+    android:layout_marginBottom="@dimen/eight_dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="@dimen/four_dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewRecyclerViewEngineList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_engine_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewNameEngineList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/eight_dp"
+            android:layout_marginRight="@dimen/eight_dp"
+            android:layout_marginBottom="@dimen/eight_dp"
+            android:text="@string/_2021_torqeedo_cruise_10_0_txl"
+            android:textColor="@color/grey_80"
+            android:textSize="@dimen/fourteen_sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageViewRecyclerViewEngineList" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewSellerEngineList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/eight_dp"
+            android:text="@string/fort_lauderdale_fl"
+            android:textColor="@color/grey_20"
+            android:textSize="@dimen/twelve_sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewNameEngineList" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewPriceEngineList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/eight_dp"
+            android:layout_marginTop="@dimen/eight_dp"
+            android:layout_marginBottom="@dimen/eight_dp"
+            android:text="@string/_9_599"
+            android:textColor="@color/grey_80"
+            android:textSize="@dimen/twelve_sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewSellerEngineList" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewEstPriceEngineList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/eight_dp"
+            android:text="@string/est_450_mo"
+            android:textColor="@color/green"
+            android:textSize="@dimen/eleven_sp"
+            app:layout_constraintBottom_toBottomOf="@id/textViewPriceEngineList"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textViewPriceEngineList" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
