@@ -44,4 +44,5 @@
     <dimen name="onetwofive_dp">125dp</dimen>
     <dimen name="four_dp">4dp</dimen>
     <dimen name="eleven_sp">11sp</dimen>
+    <dimen name="zeropointfive_dp">0.5dp</dimen>
 </resources>

@@ -1,43 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/buttonFinancePricePopup"
+    <RadioGroup
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/twenty_dp"
         android:layout_marginTop="@dimen/twenty_dp"
-        android:background="@color/brand_blue"
-        android:minWidth="@dimen/zero_dp"
-        android:minHeight="@dimen/zero_dp"
-        android:paddingLeft="@dimen/fourtyeight_dp"
-        android:paddingTop="@dimen/sixteen_dp"
-        android:paddingRight="@dimen/fourtyeight_dp"
-        android:paddingBottom="@dimen/sixteen_dp"
-        android:text="@string/finance"
-        android:textColor="@color/white"
+        android:checkedButton="@id/buttonFinancePricePopup"
+        android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/buttonPricePricePopup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/grey_light"
-        android:minWidth="@dimen/zero_dp"
-        android:minHeight="@dimen/zero_dp"
-        android:paddingLeft="@dimen/fourtyeight_dp"
-        android:paddingTop="@dimen/sixteen_dp"
-        android:paddingRight="@dimen/fourtyeight_dp"
-        android:paddingBottom="@dimen/sixteen_dp"
-        android:text="@string/price"
-        android:textColor="@color/grey_80"
-        app:layout_constraintBottom_toBottomOf="@+id/buttonFinancePricePopup"
-        app:layout_constraintStart_toEndOf="@+id/buttonFinancePricePopup"
-        app:layout_constraintTop_toTopOf="@+id/buttonFinancePricePopup" />
+        <RadioButton
+            android:id="@+id/buttonFinancePricePopup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radio_selector_price_popup_bg"
+            android:button="@android:color/transparent"
+            android:minWidth="@dimen/zero_dp"
+            android:minHeight="@dimen/zero_dp"
+            android:paddingLeft="@dimen/fourtyeight_dp"
+            android:paddingTop="@dimen/sixteen_dp"
+            android:paddingRight="@dimen/fourtyeight_dp"
+            android:paddingBottom="@dimen/sixteen_dp"
+            android:text="@string/finance"
+            android:textColor="@drawable/radio_text_color_selector_price_popup" />
+
+        <RadioButton
+            android:id="@+id/buttonPricePricePopup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radio_selector_price_popup_bg"
+            android:button="@android:color/transparent"
+            android:minWidth="@dimen/zero_dp"
+            android:minHeight="@dimen/zero_dp"
+            android:paddingLeft="@dimen/fourtyeight_dp"
+            android:paddingTop="@dimen/sixteen_dp"
+            android:paddingRight="@dimen/fourtyeight_dp"
+            android:paddingBottom="@dimen/sixteen_dp"
+            android:text="@string/price"
+            android:textColor="@drawable/radio_text_color_selector_price_popup" />
+
+    </RadioGroup>
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/textViewCashDownPricePopup"
@@ -58,11 +66,10 @@
         android:layout_marginTop="@dimen/onehundredfour_dp"
         android:layout_marginEnd="@dimen/twenty_dp"
         android:background="@drawable/textview_cash_down_price_popup_bg"
-        android:paddingLeft="@dimen/eight_dp"
+        android:paddingStart="@dimen/eight_dp"
         android:paddingTop="@dimen/eight_dp"
-        android:paddingRight="@dimen/fourty_dp"
+        android:paddingEnd="@dimen/fourty_dp"
         android:paddingBottom="@dimen/eight_dp"
-        android:text="@string/_0"
         android:textColor="@color/grey_20"
         android:textSize="@dimen/fourteen_sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -77,7 +84,7 @@
         android:layout_marginTop="@dimen/onefourtyfour_dp"
         android:layout_marginEnd="@dimen/twenty_dp"
         android:valueFrom="0"
-        android:valueTo="100"
+        android:valueTo="150000"
         app:labelBehavior="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -124,11 +131,11 @@
         android:layout_marginTop="@dimen/twofiftytwo_dp"
         android:layout_marginEnd="@dimen/twenty_dp"
         android:background="@drawable/textview_cash_down_price_popup_bg"
-        android:paddingLeft="@dimen/eight_dp"
+        android:paddingStart="@dimen/eight_dp"
         android:paddingTop="@dimen/eight_dp"
-        android:paddingRight="@dimen/sixteen_dp"
+        android:paddingEnd="@dimen/fourty_dp"
         android:paddingBottom="@dimen/eight_dp"
-        android:text="@string/_6000"
+        android:textColor="@color/grey_20"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -141,7 +148,7 @@
         android:layout_marginTop="@dimen/threehundredten_dp"
         android:layout_marginEnd="@dimen/twenty_dp"
         android:valueFrom="0"
-        android:valueTo="100"
+        android:valueTo="150000"
         app:labelBehavior="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -173,7 +180,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/twenty_dp"
         android:layout_marginTop="@dimen/fouronesix_dp"
-        android:text="Boatzon Offers Financing"
+        android:text="@string/boatzon_offers_financing"
         android:textSize="@dimen/eighteen_sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -195,22 +202,23 @@
         android:layout_width="@dimen/zero_dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/twenty_dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="@dimen/twenty_dp"
-        android:layout_marginBottom="32dp"
         android:background="@drawable/btn_financing_price_popup_bg"
         android:text="@string/boatzon_offers_financing"
         android:textAllCaps="false"
         android:textColor="@color/brand_blue"
         android:textSize="@dimen/eighteen_sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include" />
 
     <include
+        android:id="@+id/include"
         layout="@layout/layout_rate_experience"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/buttonBoatzonOffersPricePopup"
+        android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewBoatzonOffersDecPricePopup" />

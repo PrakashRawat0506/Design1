@@ -55,4 +55,5 @@
     <string name="fort_lauderdale_fl">Fort Lauderdale, FL</string>
     <string name="_9_599">$ 9,599</string>
     <string name="est_450_mo">Est. $450/mo</string>
+    <string name="cash_down_price">$ %1$d</string>
 </resources>
